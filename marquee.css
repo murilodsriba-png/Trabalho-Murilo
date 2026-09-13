@@ -1,0 +1,1 @@
+.marquee-track{display:flex;width:max-content;animation:marquee-loop 28s linear infinite!important}.marquee-track>div{flex-shrink:0;animation:none!important}.marquee-track>div+div{padding-left:0}@keyframes marquee-loop{from{transform:translateX(0)}to{transform:translateX(-50%)}}@media(prefers-reduced-motion:reduce){.marquee-track{animation:none!important}}
