@@ -14,12 +14,23 @@
   <link rel="stylesheet" href="conversion.css">
   <link rel="stylesheet" href="marquee.css">
   <link rel="stylesheet" href="atmosphere.css">
+  <style>
+    .logo-showcase{max-width:1200px;margin:0 auto 30px;padding:0 30px}
+    .logo-showcase-inner{display:grid;grid-template-columns:1fr 1.2fr;gap:42px;align-items:center;padding:42px 48px;background:#101827;color:#fff;overflow:hidden}
+    .logo-showcase-copy .eyebrow{margin-bottom:18px;color:#7fb0ff}
+    .logo-showcase-copy h2{max-width:390px;margin:0 0 14px;font:600 clamp(28px,4vw,48px)/1 var(--display);letter-spacing:-.06em}
+    .logo-showcase-copy h2 em{color:#7fb0ff;font-style:normal}
+    .logo-showcase-copy p{max-width:350px;margin:0;color:#aebbd0;font-size:14px;line-height:1.7}
+    .logo-showcase-image{position:relative;aspect-ratio:16 / 9;overflow:hidden;background:#263238;border:1px solid rgba(255,255,255,.18)}
+    .logo-showcase-image img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
+    @media (max-width: 700px){.logo-showcase{padding:0 20px}.logo-showcase-inner{grid-template-columns:1fr;gap:26px;padding:30px 24px}.logo-showcase-copy h2{font-size:34px}}
+  </style>
 </head>
 <body>
   <div class="page-shell">
     <header class="site-header" id="inicio">
       <a class="brand" href="#inicio" aria-label="CodeDraft Studio - início">
-        <span class="brand-mark"><img src="favicon-codedraft.svg" alt="CodeDraft Studio" width="22" height="22" style="border-radius: 50%; object-fit: cover;"></span>
+        <span class="brand-mark"><img src="favicon-codedraft.jpg" alt="Logo CodeDraft Studio" width="30" height="30" style="display: block; width: 30px; height: 30px; border-radius: 50%; object-fit: cover;"></span>
         <span>CodeDraft <span class="brand-dot">Studio</span></span>
       </a>
       <nav class="desktop-nav" aria-label="Navegação principal">
@@ -59,6 +70,8 @@
         </div>
       </section>
 
+      <section class="logo-showcase" aria-label="Identidade visual"><div class="logo-showcase-inner"><div class="logo-showcase-copy"><p class="eyebrow"><span class="eyebrow-line"></span> Identidade que permanece</p><h2>Uma marca forte começa pelo <em>detalhe.</em></h2><p>O mesmo cuidado que transforma uma ideia em presença digital também aparece na forma como sua marca é lembrada.</p></div><div class="logo-showcase-image"><img src="logo-codedraft.jpg" alt="Logo CodeDraft Studio em uma parede de tijolos"></div></div></section>
+
       <section class="marquee" aria-label="Especialidades"><div class="marquee-track"><div>ESTRATÉGIA <span>✦</span> DESIGN <span>✦</span> PERFORMANCE <span>✦</span> CONVERSÃO <span>✦</span> ESTRATÉGIA <span>✦</span> DESIGN <span>✦</span> PERFORMANCE <span>✦</span> CONVERSÃO <span>✦</span></div><div aria-hidden="true">ESTRATÉGIA <span>✦</span> DESIGN <span>✦</span> PERFORMANCE <span>✦</span> CONVERSÃO <span>✦</span> ESTRATÉGIA <span>✦</span> DESIGN <span>✦</span> PERFORMANCE <span>✦</span> CONVERSÃO <span>✦</span></div></div></section>
 
       <section class="benefits section-grid section-spacing" id="beneficios">
@@ -96,7 +109,7 @@
       <section class="contact section-grid" id="contato"><div class="contact-art reveal"><span class="contact-number">04</span><div class="contact-circle"><span>Vamos<br><em>conversar?</em></span><strong>↗</strong></div></div><div class="contact-copy reveal"><p class="eyebrow"><span class="eyebrow-line"></span> Diagnóstico inicial</p><h2>Seu próximo cliente pode estar a um clique de distância.</h2><p>Responda três coisas e eu te mostro o caminho mais direto para transformar sua presença online em demanda.</p><form class="contact-form" id="lead-form"><label>Seu nome<input name="name" type="text" placeholder="Como posso te chamar?" required></label><label>Seu negócio<input name="business" type="text" placeholder="Ex.: Clínica Aurora" required></label><label>O que você precisa?<select name="goal" required><option value="" selected disabled>Escolha uma opção</option><option>Uma landing page para vender</option><option>Um site institucional</option><option>Quero melhorar meu site atual</option><option>Ainda estou entendendo o melhor caminho</option></select></label><button class="button button-whatsapp" type="submit"><span class="wa-icon">◔</span> Receber ideias para o meu projeto <span>↗</span></button></form><p class="contact-note"><strong>Resposta em até 1 dia útil.</strong> Conversa inicial sem compromisso.</p></div></section>
     </main>
 
-    <footer class="site-footer"><a class="brand" href="#inicio"><span class="brand-mark">C</span><span>CodeDraft <span class="brand-dot">Studio</span></span></a><span>Landing pages com intenção.</span><span>© 2026 CodeDraft Studio</span></footer>
+    <footer class="site-footer"><a class="brand" href="#inicio"><span class="brand-mark"><img src="favicon-codedraft.jpg" alt="Logo CodeDraft Studio" width="30" height="30" style="display: block; width: 30px; height: 30px; border-radius: 50%; object-fit: cover;"></span><span>CodeDraft <span class="brand-dot">Studio</span></span></a><span>Landing pages com intenção.</span><span>© 2026 CodeDraft Studio</span></footer>
   </div>
   <a class="floating-whatsapp" data-whatsapp href="#contato" aria-label="Falar pelo WhatsApp">◔</a>
   <script src="script.js"></script>
